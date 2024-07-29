@@ -3,14 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TUGAS DESAIN WEB</title>
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body background="bacgound.jpg">
-    <h1 align="center">WEBSITE SAYA</h1>
-    <h3 align="center"><a href="Beranda.html" style="color: grey;">BERANDA |</a>
-                       <a href="Profil.html" style="color: grey;">PROFIL |</a>
-                       <a href="AudioVideo.html" style="color: grey;">AUDIO/VIDEO |</a>
-                       <a href="Tentang.html" style="color: grey;">TENTANG |</a></h3>
+<body>
+    <div class="main">
+    <div class="topbar">
+    <label class="logo">MyWebsite</label>
+    <nav>
+        <ul>
+            <li><a href="#beranda">HOMEPAGE</a></li>
+            <li><a href="#profil">PROFILE</a></li>
+            <li><a href="#audio-video">AUDIO VIDEO</a></li>
+            <li><a href="#tentang">ABOUT</a></li>
+            <li><a href="#berita">NEWS</a></li>
+        </ul>
+    </nav>
+    </div>  
+    </div>
 
+    <div class="content">
+        <section id="beranda">
+            <h2>Design Your website</h2>
+            <p>Don't forget to like,comment,share and subscribe</p>
+
+            <div>
+                <button type="button"><span></span>MORE INFORMATION?</button>
+                <button type="button"><span></span>SUBSCRIBE</button>
+              </div>
+            </section>
+
+            <section id="profil">
+            <div class="profil-content"></div>
+              <h2>About Myself</h2>
+              <table border="1" cellspacing="0" cellpadding="5" align="center" width="700">
+                <tr align="center" bgcolor="gray">
+                <td widht="200"><b>FOTO</b></td>
+                <td width="300"><b>DATA DIRI</b></td>
+                <td width="500"><b>KETERANGAN</b></td>                            
+               </tr>
+               </tr>
+               <tr>
+                <td rowspan="11"><img src="myfoto.jpg" alt="" width="250" height="360" ></td>
+                  <td>Nama</td>
+                  <td>Rosita</td>
+                </tr>
+                <tr>
+                    <td>Nim</td>
+                    <td>16323041</td>
+                 </tr>
+                <tr>
+                  <td>Ttl</td>
+                  <td>Yainuelo,06 Februari 2004</td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>Mahasiswa</td>
+                  </tr>
+                <tr>
+                  <td>Alamat</td>
+                  <td>Kayu merah</td>
+                </tr>
+                <tr>
+                  <td>Agama</td>
+                  <td>Islam</td>
+                </tr>
+                <tr>
+                  <td>Jenis Kelamin</td>
+                  <td>Perempuan</td>
+                </tr>
+                <tr>
+                   <td>Jurusan/Semester</td>
+                   <td>Manajemen Informatika/2(dua)</td>
+                </tr>
+                <tr>
+                  <td>Nama Fakultas</td>
+                  <td>Politeknik Negeri Fak-fak</td>
+               </tr>   
+               <tr>
+                  <td>Asal Sekolah</td>
+                  <td>Sma Negeri 44 Maluku tengah</td>
+               </tr>
+               <tr>
+                  <td>Asal Daerah</td>
+                  <td>Kec.Amahai,Desa Yainuelo</td>
+               </tr>
+               </table>
+            </section>
+        
+            <section id="audio-video">
+              <h2>Audio dan Video</h2>
+              <p>Ini merupkan Audio dan Video yang saya suka,pertama kenapa saya menyukai lagu 
+                "Perfect" itu karna alunan instrument musicnya yang menurut saya sangat tenang
+                dan arti dari lagunya yang bagus,sehingga membuat saya suka dengan music ini.
+                Sedangkan untuk video,kenapa saya memasukkan video senja karena saya salah satu orang
+                yang suka akan keindahan mata hari terbenam. <br></p>
+
+              <audio controls src="Ed Sheeran - Perfect (Official Music Video).mp3" 
+                                alt="Audio description"></audio><br>
+              <video controls autoplay src="WhatsApp Video 2024-07-29 at 20.15.21.mp4" width="250" height="250" 
+                                alt="Video description"></video><br>
+            </section>
+        
+            <section id="tentang">
+              <h2>About MyWebsite</h2>
+              <p>Website berisi tentang profil/data diri saya, dan musik serta video yang saya sukai<br></p>
+            </section>
+        
+            <section id="berita">
+              <h2>Berita Terbaru</h2>
+              <p>Blaming others or something out of your control is an attitude that can stop your success.
+                 Focus on accepting the problem, stop blaming others because it won't change you into a 
+                 better person. According to Wayne Dyer, trying to find justification in this life is in vain.
+                 Try to commit to taking full responsibility for your life and face every problem with confidence <br></p>
+            </section>
+          </div>
+        
+          <footer>
+            <p>&copy; Ithrumbia 2024</p>
+          </footer>
+        </div>
+        
+        <script>
+          // Add smooth scrolling behavior
+          document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+              e.preventDefault();
+              const targetId = e.target.getAttribute('href');
+              const targetSection = document.querySelector(targetId);
+              targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+          });
+        </script>
+        </section>
+    </div>
 </body>
 </html>

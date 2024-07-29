@@ -1,0 +1,200 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    background-image: linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0,0.75)),
+    url("bung.jpg");
+    background-size: 1500px;
+    background-position: center;
+}
+
+
+
+.topbar {
+    width: 100%; 
+    padding: 15px 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+
+.topbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.topbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009cea;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.topbar ul li a {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+.topbar ul li a:hover {
+    color: #75caff;
+}
+
+.topbar ul li:hover::after {
+    width: 100%;
+}
+
+
+.logo {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    width: 50px;
+    cursor: pointer;
+    padding-left: 20px; 
+}
+
+.content {
+    width: 100%;
+    color: white;
+}
+
+#beranda {
+    background-image: url(bung.jpg);
+    text-align: center;
+    padding: 150px 10px; 
+}
+
+#beranda h1 {
+    font-size: 90px;
+    margin-top: 50px;
+}
+
+#beranda p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+
+button {
+    width: 200px;
+    margin: 20px 10px;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    border: 3px solid #2740ff;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+span {
+    height: 100%;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    border-radius: 10px;
+    background: #2740ff;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    color: #055296;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+section {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+}
+#profil {
+    background-image: url(denim.jpg);
+}
+#audio-video {
+    background-image: url(denim.jpg);
+}
+#tentang {
+    background-image: url(denim.jpg);
+}
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
